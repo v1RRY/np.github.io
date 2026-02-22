@@ -1,4 +1,146 @@
-body{
-background-color:#000000;
-color:#ffffff;
+/* ===== RESET & BASE ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1.6;
+  color: white;
+  background-color: black;
+}
+
+/* ===== TYPOGRAPHY ===== */
+h1, h2, h3 {
+  color: white;
+  margin-bottom: 0.5em;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+
+/* Small grey text */
+small {
+  color: #808080; /* Standard grey */
+  font-size: 0.875rem;
+}
+
+/* Big grey text - using class for larger grey elements */
+.big-grey {
+  color: #808080;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+/* ===== TEXT ELEMENTS ===== */
+p {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+span {
+  color: white;
+}
+
+b, strong {
+  color: white;
+  font-weight: 700;
+}
+
+i, em {
+  color: white;
+  font-style: italic;
+}
+
+/* ===== LINKS ===== */
+a {
+  color: #0066cc; /* Standard blue */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #4da6ff; /* Lighter blue on hover */
+  text-decoration: underline;
+}
+
+/* Additional content links - light blue */
+.additionalcontentlink,
+a.additional-content-link,
+[class*="additional"] a,
+a[class*="additional"] {
+  color: #add8e6; /* Light blue */
+}
+
+.additionalcontentlink:hover,
+a.additional-content-link:hover {
+  color: #bfe6ff; /* Even lighter on hover */
+  text-decoration: underline;
+}
+
+/* Contextic - using class for context elements */
+.contextic {
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+
+/* ===== LAYOUT ===== */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ===== UTILITIES ===== */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+/* Margin utilities */
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+.mt-4 { margin-top: 2rem; }
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-3 { margin-bottom: 1.5rem; }
+.mb-4 { margin-bottom: 2rem; }
+
+/* Padding utilities */
+.p-1 { padding: 0.5rem; }
+.p-2 { padding: 1rem; }
+.p-3 { padding: 1.5rem; }
+.p-4 { padding: 2rem; }
+
+/* ===== CUSTOM GREY TEXT CLASSES ===== */
+.grey-text {
+  color: #808080;
+}
+
+.small-grey {
+  color: #808080;
+  font-size: 0.875rem;
+}
+
+/* ===== ADDITIONAL ELEMENTS ===== */
+::selection {
+  background-color: #808080;
+  color: white;
+}
+
+::-moz-selection {
+  background-color: #808080;
+  color: white;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #333;
+  margin: 1rem 0;
 }
